@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title> AB Music Player </title>
+	
+	<link rel="stylesheet" href="./assets/css/style.css" type="text/css" media="all" />
+</head>
+<body>
+	
+	<main>
+		<div class="musicPlayer">
+			<p id="musicIcon"> 🎵 </p>
+			
+			<div class="musicController">
+				<marquee id="displayText"> No Song Played </marquee>
+				
+				<p id="time">
+					<span id="runningTime"> 0:00 </span>
+					<span id="durationTime"> 0:00 </span>
+				</p>
+				
+				<input type="range" id="range" value="0" min="0" max=""/> <br />
+				
+				<button id="replay"> 🔂 </button>
+				<span> • </span>
+				<button id="prev"> ⏪ </button>
+				<button id="pause"> ⏸ </button>
+				<button id="play"> 🔽 </button>
+				<button id="next"> ⏩ </button>
+				<span> • </span>
+				<button id="mute"> 🔇 </button>
+			</div>
+		</div>
+	</main>
+	
+	
+	<script src="./assets/js/main.js" type="module"></script>
+</body>
+</html>
